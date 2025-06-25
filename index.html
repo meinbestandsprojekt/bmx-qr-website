@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Wir wollen lokal bleiben!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Fjalla One einbinden -->
+  <!-- Fjalla One Font -->
   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
   <style>
     body {
@@ -13,35 +13,36 @@
       background-color: #000;
       color: #fff;
       font-family: 'Fjalla One', sans-serif;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
       min-height: 100vh;
+      display: flex;
+      justify-content: center;
       text-align: center;
     }
 
     .container {
-      padding: 12vh 5vw 0 5vw;
-      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10vh 5vw 0 5vw;
       width: 100%;
+      max-width: 800px;
     }
 
     h1 {
-      font-size: 3.6em;
-      margin-bottom: 20px;
-      white-space: nowrap;
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      margin-bottom: 40px;
     }
 
     p {
-      font-size: 1em;
+      font-size: 0.95em;
       max-width: 600px;
-      margin: 0 auto 30px auto;
+      margin: 0 auto 60px auto;
       line-height: 1.5;
       color: #aaa;
     }
 
     a.button {
-      display: inline-block;
       padding: 20px 40px;
       background-color: #fff;
       color: #000;
