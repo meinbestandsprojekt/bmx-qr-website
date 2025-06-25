@@ -2,41 +2,65 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Was ist das hier?</title>
+  <title>Wir wollen lokal bleiben!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fjalla One einbinden -->
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
       background-color: #000;
       color: #fff;
+      font-family: 'Fjalla One', sans-serif;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      margin: 0;
+      min-height: 100vh;
       text-align: center;
     }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 30px;
-      padding: 0 20px;
+
+    .container {
+      padding: 0 5vw;
     }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto 40px auto;
+      line-height: 1.4;
+    }
+
     a.button {
-      text-decoration: none;
-      padding: 12px 24px;
+      display: inline-block;
+      padding: 20px 40px;
       background-color: #fff;
       color: #000;
+      font-size: 1.4em;
+      text-transform: uppercase;
+      text-decoration: none;
       font-weight: bold;
-      border-radius: 5px;
-      transition: background-color 0.2s;
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(255,255,255,0.2);
+      transition: transform 0.25s ease, background-color 0.25s ease;
     }
+
     a.button:hover {
-      background-color: #ccc;
+      background-color: #eee;
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <h1>Was hier passiert, verändert dein Bild von BMX für immer.</h1>
-  <a class="button" href="intro.html">Jetzt ansehen</a>
+  <div class="container">
+    <h1>Wir wollen lokal bleiben!</h1>
+    <p>Nimm dir ein paar Minuten Zeit, schau dir das folgende Video an und vielleicht kannst du noch etwas für deine lokale Umgebung tun!</p>
+    <a class="button" href="intro.html">Jetzt ansehen</a>
+  </div>
 </body>
 </html>
